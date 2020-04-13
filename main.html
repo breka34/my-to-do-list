@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="..\css\stil.css">
+        <script src="..\js\index.js"></script> 
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <h2>My TO DO list</h2>
+                <input type="text" id="myInput" placeholder="I would love to learn...">
+                <button type="button" onclick="newElement()" class="addBtn">Add</button>
+            </div>
+        </header>
+        <div class="myList">
+            <ul id="myUl">
+                <li class="checked">HTML</li>
+                <li class="checked">CSS</li>
+            </ul>
+        </div>
+        <button class="open-button" onclick="openForm()">Open Form</button>
+        <div class="form-popup" id="myForm">
+            <form class="form-container">
+                <h2>Login</h2>
+                <label for="email">E-mail</label>
+                <input type="text" placeholder="Enter E-mail" required>
+
+                <label for="nameSurname">Ime i Prezime</label>
+                <input type="text" placeholder="Enter first and last name">
+
+                <label for="psw">Password</label>
+                <input type="password" required placeholder="Enter Password">
+
+                <button type="submit" class="btn">Login</button>
+                <button type="button" class="btn-cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </body>
+</html>
